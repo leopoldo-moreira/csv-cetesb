@@ -13,7 +13,7 @@ function App() {
       Papa.parse(file, {
         complete: (result) => {
           const processedData = result.data.map(row =>
-            row.map(cell => (cell === '' ? '0' : cell))
+            row.map(cell => (cell === '' ? '' : cell))
           );
           allData = [...allData, ...processedData];
           setData(allData);
