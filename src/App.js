@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App" style={{ fontFamily: 'Arial, sans-serif', padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
-      <h1 style={{ textAlign: 'center', color: '#333', marginBottom: '20px' }}>CETESB CSV Processor</h1>
+      <h1 style={{ textAlign: 'center', color: '#333', marginBottom: '20px' }}>CSV Processor</h1>
       <input 
         type="file" 
         accept=".csv" 
@@ -39,14 +39,13 @@ function App() {
           <tr>
             <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Data</th>
             <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Hora</th>
-            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Média Horária</th>
-            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Média Horária</th>
-            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Média Horária</th>
+            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Valor</th>
+            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Outro</th>
           </tr>
         </thead>
         <tbody>
           {data.map((row, index) => (
-            <tr key={index} style={{ textAlign: 'center', backgroundColor: index % 2 === 0 ? '#f9f9f9' : '#fff' }}>
+            <tr key={index} style={{ textAlign: 'center' }}>
               {row.map((cell, i) => (
                 <td key={i} style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>{cell}</td>
               ))}
