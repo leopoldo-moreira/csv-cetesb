@@ -39,8 +39,9 @@ function App() {
           <tr>
             <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Data</th>
             <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Hora</th>
-            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Valor</th>
-            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Outro</th>
+            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Média Horária</th>
+            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Média Horária</th>
+            <th style={{ backgroundColor: '#f2f2f2', padding: '10px', borderBottom: '2px solid #ddd' }}>Média Horária</th>
           </tr>
         </thead>
         <tbody>
